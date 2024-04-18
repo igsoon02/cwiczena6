@@ -18,6 +18,9 @@ class Students {
                             if (aktualnySemestr > programme.getSemestr()){
                                 student.setStatus("Absolwent");
                             }
+                            if (aktualnySemestr > 0){
+                                student.setStatus("Student");
+                            }
 
                         }
                     }
