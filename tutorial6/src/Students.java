@@ -15,7 +15,7 @@ class Students {
                     if(aktualnySemestr < programme.getSemestr()){
                         if(student.getItn() <  programme.getItn()){
                             student.promoteToNextSemester();
-                            if (aktualnySemestr + 1 == programme.getSemestr()){
+                            if (aktualnySemestr > programme.getSemestr()){
                                 student.setStatus("Absolwent");
                             }
 
